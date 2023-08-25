@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:note_app/home.dart';
-import 'package:note_app/resopnsive/mobile.dart';
-import 'package:note_app/resopnsive/web.dart';
+import 'package:note_app/views/notes_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,11 +15,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: HomeScreen(),
+      theme: ThemeData(brightness: Brightness.dark),
+      home: NotsViewScreen(),
 
       // Builder(
       //   builder: (context) {
